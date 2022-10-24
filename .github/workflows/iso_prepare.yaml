@@ -1,9 +1,9 @@
 name: Prepare ISO
-on:
-  schedule:
-    - cron: 15 07 * * *
-  pull_request: null
-  push: null
+
+on: [push]
+  #schedule:
+  #  - cron: 15 07 * * *
+
 jobs:
   run-wget-action:
     runs-on: ubuntu-latest
