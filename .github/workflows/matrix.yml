@@ -21,7 +21,7 @@ jobs:
       fail-fast: true
     runs-on: ${{ matrix.os }}
     env:
-      IS_UBUNTU_LATEST_NODE_8: {{ matrix.is_ubuntu_latest_node_8 }}
+      IS_UBUNTU_LATEST_NODE_8: ${{ matrix.is_ubuntu_latest_node_8 }}
     steps:
       - name: Log node veresion
         run: node -v
